@@ -410,9 +410,9 @@ END_TEST
  */
 int main(int argc, char **argv)
 {
-    system("python gen-disk.py -q disk1.in test.img");
+    system("python gen-disk.py -q disk1.in test1.img");
 
-    block_init("test.img");
+    block_init("test1.img");
     fs_ops.init(NULL);
     
     Suite *s = suite_create("fs5600");

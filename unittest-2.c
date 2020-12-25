@@ -502,7 +502,7 @@ END_TEST
 
 int main(int argc, char **argv)
 {
-    system("python gen-disk.py -q disk2.in test2.img");
+    system("python gen-disk.py -q disk1.in test2.img");
 
     block_init("test2.img");
     fs_ops.init(NULL);
